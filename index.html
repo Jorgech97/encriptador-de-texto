@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--está sección trabaja el encabezado en este caso se carga el logo en header-->
+    <header>
+        <a>
+            <img src="imagenes/logo.svg" alt="logo de Aura" class="logo">
+        </a>
+    </header>
+    <!--está la sección principal con la etiqueta main-->
+    <main>
+        <!--cuadro de texto y botones-->
+        <section class="encriptador">
+            <textarea class="encriptar" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="encriptador-aviso">
+                <!--aquí se selecciona el icono con etiqueta img y el texto informativo con etiqueta p-->
+                <img src="imagenes/aviso.svg" alt="texto informativo" class="img-aviso">
+                <p class="texto-aviso">Solo puede ingresar letras minúsculas y sin acentos</p>
+            </div>
+            <div class="encriptador-contenedor">
+                <!--agregar botones de encriptar y desencriptar-->
+                <button class="btn-encriptar" type="submit">Encriptar</button>
+                <button class="btn-desencriptar" type="submit">Desencriptar</button>
+            </div>
+        </section>
+        <!--targeta informativa con dibujo y caja de texto con etiquetas div y textarea (readonly sirve para evitar modificar texto en text area)-->
+        <section class="tarjeta">
+            <div class="tarjeta-contenedor">
+                <img class="img-dibujo" src="imagenes/muñeco.svg" alt="imagen dibujo">
+                <p class="texto-uno">Ningún mensaje fue encontrado</p>
+                <p class="texto-dos">Ingrese el texto que desea encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button class="btn-copiar" type="mensaje">Copiar</button>
+        </section>
+    </main>
+    <!--pie de pagina, aqui irá el final e información adicional-->
+    <footer>
+        <p class="copyright">&copy; copyright 2024 - encriptador de texto - desarrollado por Jorge Chaves Montiel</p>
+        <a href="http://www.linkedin.com/in/jorge-chaves-montiel">
+            <img src="imagenes/linkedin.svg" alt="icono linkedin" class="linkedin">
+        </a>
+        <a href="https://github.com/Jorgech97">
+            <img src="imagenes/github.svg" alt="icono github" class="git">
+        </a>
+    </footer>
+    <!--cargar archivo javascript-->
+    <script src="encriptador.js"></script>
+</body>
+
+</html>
